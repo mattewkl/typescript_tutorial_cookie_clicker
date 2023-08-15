@@ -1,0 +1,36 @@
+.body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.main-container {
+  display: flex;
+  width: 60vw;
+  height: 60vw;
+  align-self: center;
+  justify-self: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cookie {
+  width: 50%;
+  height: 50%;
+  transition: all ease-in-out 0.5s;
+}
+
+.cookie_small {
+  width: 30%;
+  height: 30%;
+  transition: all ease-in-out 0.5s;
+}
+
+.score {
+  font-family: Inter;
+  font-size: 2rem;
+}
+
+/*# sourceMappingURL=style.css.map */
