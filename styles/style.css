@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
+  position: relative;
 }
 
 .main-container {
@@ -19,18 +20,81 @@
 .cookie {
   width: 50%;
   height: 50%;
-  transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 200ms;
 }
 
 .cookie_small {
   width: 30%;
   height: 30%;
-  transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 200ms;
 }
 
 .score {
   font-family: Inter;
   font-size: 2rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 10vh;
+  border: 2px solid red;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 2rem;
+}
+
+.header__title {
+  font-family: Inter;
+  font-size: 3rem;
+}
+
+.header__button {
+  display: flex;
+  width: 5rem;
+  height: 5rem;
+  border: none;
+  background: transparent;
+}
+
+.header__button-icon {
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.overlay_shown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shop {
+  display: flex;
+  visibility: hidden;
+  transform: translateX(100%);
+  transition: all linear 200ms;
+  position: absolute;
+  right: 0;
+  width: 30%;
+  height: 100vh;
+  background-color: whitesmoke;
+}
+
+.shop_open {
+  visibility: visible;
+  transform: translateX(10%);
+  transition: all linear 200ms;
 }
 
 /*# sourceMappingURL=style.css.map */
